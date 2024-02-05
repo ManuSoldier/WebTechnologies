@@ -1,0 +1,19 @@
+body{
+
+    background-image:url(./images/loginBackground.jpg);
+    background-size: cover;
+}
+
+.info{
+
+position:relative;
+left: 50px;
+bottom: -100px;
+color: white;
+}
+
+button{
+
+    position: relative;
+    text-align:55px;
+}

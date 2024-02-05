@@ -1,0 +1,73 @@
+let ref = [20, 50, 80, 60, 10];
+
+let updatedArray=ref.map(function(elements){
+return elements * 10;                           ///// maping function
+});
+
+console.log(updatedArray);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+let ref1 = [20, 50, 80, 60, 10];
+
+let updatedArray1=ref.map((elements)=>{     //arrow Function in higherOrderFunction
+return elements * 10;
+});
+
+console.log(updatedArray1);
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+let arrowFunction=()=>{
+    //alert("This is a Manoj Soldier");       /////// Printing Alert msg in higherOrderFunctions
+}
+//arrowFunction();
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+console.log(ref)
+let filterElements= ref.filter(function(elements){
+var output= elements>10                           //////Filter the elements how we needed by using filter
+return output;
+
+})
+console.log(filterElements)
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+console.log(ref)
+ref.filter(elements=>{return elements>10})      ////filtering elements using arrow function 
+console.log(filterElements)
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+console.log(filterElements);
+console.log(ref)
+var reduce=ref.reduce(function(curr,acc){
+    var sum=curr+acc;                      ///// Sum of all elements using reduce function
+    return sum;
+})
+
+console.log(reduce)
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+console.log(ref);
+var slice=ref.slice(2)      ///// slicing the elememts
+console.log(slice)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+console.log(ref)
+var splice=ref.splice();
+console.log(splice)
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
